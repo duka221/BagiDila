@@ -35,7 +35,12 @@ body{
 	color: black;
 	padding: 15px 0;
 }
+
+
      /*main*/
+
+
+
 .main{
 	background: rgb(255,255,255);
     width: 80%;
@@ -57,6 +62,7 @@ body{
 	margin-bottom: auto;
 	color: black;
 	margin-left: 15px;
+	text-align: justify;
 }
 .main-padding{
 	padding: 10px 100px;
@@ -70,12 +76,13 @@ body{
 	height: 250px;
 	margin:auto;
 	border:none;
-
 }
 .side-right-text{
 	margin-top: auto;
 	margin-bottom: auto;
 	color: black;
+	text-align: justify;
+	margin-right: 15px;
 }
 .side-left{
 	display: flex;
@@ -86,33 +93,109 @@ body{
 	width: 350px;
 	height: 250px;
 }
+
+
+
   /*contact page*/
-.contact i{ 
-	font-size: 15px;
-	padding: 0px 20px;
+
+
+
+.contact-info i{ 
+	font-size: 16px;
+	padding: 10px 20px;
 }
 .contact iframe{
-	width: 500px;
-	height: 350px;
+	width: 350px;
+	height: 270px;
 	margin:auto;
+	padding-top: 10px;
+}
+.contact img{
+	margin:auto;
+	width: 350px;
+	height: 250px;
+	padding-left: 15px;
 }
 .contact{
 	margin:auto;
-	display: table;
+	display: flex;
+	text-align: center;
 }
-.contact strong{
+.contact-frame{
+	display: flex !important;
+
+}
+.contact-info strong{
 	cursor: pointer;
+	font-size: 16px;
 }
+.contact-info{
+	display: table;
+	margin: auto;
+}
+input[type=text], select, textarea {
+  width: 100%; 
+  padding: 12px; 
+  border: 1px solid #ccc; 
+  border-radius: 40px; 
+  box-sizing: border-box; 
+  margin-top: 6px; 
+  margin-bottom: 16px; 
+  resize: vertical;
+}
+
+
+input[type=submit] {
+  background-color: green;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+
+.container {
+  border-radius: 5px;
+  background-color: white;
+  padding: 20px;
+}
+
+
+
 /*about page*/
+
+
+
 .about h1{
 	margin-bottom: 20px;
+	text-align: center;
 }
 .about{
 	text-align: center;
 	font-size: 18px;
 	padding: 20px;
+	text-align: justify;
 }
+.about img{
+	float: left;
+	width: 500px;
+	height: 250px;
+	padding:5px 5px 5px 0;
+}
+	
+
+
+
 /*responsive*/
+
+
+
 @media only screen and (max-width: 1000px) {
   body {
     background-color: lightblue;
@@ -125,13 +208,19 @@ body{
   .main-padding{
   	padding: 0;
   }
-  .contact iframe{
+  .contact-frame iframe{
   	width: 100%;
   	margin: 0;
+  }
+  .contact-frame {
+  	display: block;
   }
   .contact{
   	margin: 0;
   	width: 100%;
+  }
+  .contact i{
+  	display: grid;
   }
   .side-left{
   	display: block;
@@ -151,12 +240,28 @@ body{
   .side-left-text{
   	margin: 0;
   }
+  .about img{
+  	width: 350px;
+  	display: table;
+  	margin: auto;
+  }
+  
 }
 @media only screen and (max-width: 600px){
 	.side-left img{
-  	width: 100%;
+  		width: 100%;
   }
   	.side-right iframe{
-  	width: 100%;
+  		width: 100%;
   }
+  	.about img{
+  		width: 100%;
+  	}
+  	.contact-frame {
+  		display: block !important;
+  	}
+  	.contact-frame img{
+  		width: 100%;
+  		padding: 0;
+  	}
 }
