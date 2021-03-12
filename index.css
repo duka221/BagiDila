@@ -1,0 +1,162 @@
+@font-face{
+	font-family: "bpg-glaho-webfont";
+	src:url(bpg-glaho-webfont.ttf);
+	font-style: normal;
+	font-weight: 100;
+}
+*{
+	margin: 0;
+	font-family: bpg-glaho-webfont;
+	font-weight: 100;
+	box-sizing: border-box;
+}
+body{
+	background:url(background.jpg);
+	background-repeat: no-repeat;
+    background-size: cover; 
+    background-attachment: fixed;
+}	
+     /*head*/
+.header{
+	background: rgb(255,255,255);
+	background: linear-gradient(90deg, rgba(255,255,255,1) 61%, rgba(255,255,255,0) 83%);
+	font-size: 17px;
+	text-align: left;
+	display: flex;
+}
+.header-nav{
+	margin-top: 5px;
+	display: flex;\
+}
+.header-nav-item a{
+	display: flex;
+	margin-left: 25px;
+	text-decoration: none;
+	color: black;
+	padding: 15px 0;
+}
+     /*main*/
+.main{
+	background: rgb(255,255,255);
+    width: 80%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    border-radius: 30px;
+}
+.side-left{
+	margin-bottom: 20px;
+}
+.side-left img{
+	width: 350px;
+	height: 250px;
+}
+.side-left-text{
+	margin-top: auto;
+	margin-bottom: auto;
+	color: black;
+	margin-left: 15px;
+}
+.main-padding{
+	padding: 10px 100px;
+}
+.side-right{
+	display: flex;
+	margin-bottom: 15px;
+}
+.side-right iframe{
+	width: 350px;
+	height: 250px;
+	margin:auto;
+	border:none;
+
+}
+.side-right-text{
+	margin-top: auto;
+	margin-bottom: auto;
+	color: black;
+}
+.side-left{
+	display: flex;
+	margin-bottom: 15px;
+}
+.side-left img{
+	margin:auto;
+	width: 350px;
+	height: 250px;
+}
+  /*contact page*/
+.contact i{ 
+	font-size: 15px;
+	padding: 0px 20px;
+}
+.contact iframe{
+	width: 500px;
+	height: 350px;
+	margin:auto;
+}
+.contact{
+	margin:auto;
+	display: table;
+}
+.contact strong{
+	cursor: pointer;
+}
+/*about page*/
+.about h1{
+	margin-bottom: 20px;
+}
+.about{
+	text-align: center;
+	font-size: 18px;
+	padding: 20px;
+}
+/*responsive*/
+@media only screen and (max-width: 1000px) {
+  body {
+    background-color: lightblue;
+  }
+  .main{
+  	width: 100%;
+  	border-radius: 0;
+  	margin: 0;
+  }
+  .main-padding{
+  	padding: 0;
+  }
+  .contact iframe{
+  	width: 100%;
+  	margin: 0;
+  }
+  .contact{
+  	margin: 0;
+  	width: 100%;
+  }
+  .side-left{
+  	display: block;
+  }
+  .side-right{
+  	display: flex;
+  	flex-direction: column-reverse;
+  }
+  .side-left img{
+  	width: 350px;
+  	display: table;
+  	margin: auto;
+  }
+  .side-right iframe{
+  	width: 350px;
+  }
+  .side-left-text{
+  	margin: 0;
+  }
+}
+@media only screen and (max-width: 600px){
+	.side-left img{
+  	width: 100%;
+  }
+  	.side-right iframe{
+  	width: 100%;
+  }
+}
